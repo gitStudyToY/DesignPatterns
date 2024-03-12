@@ -27,4 +27,23 @@ public class XMLUtil {
             return null;
         }
     }
+    public static Object getPictureType() {
+        try {
+            //创建文档对象
+            DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = dFactory.newDocumentBuilder();
+            Document doc;
+            doc = builder.parse(new File("resource/config.xml"));
+            //获取包含图表类型的文本节点
+            NodeList nl = doc.getElementsByTagName("pictureType");
+            Node classNode = nl.item(0).getFirstChild();
+            String pictureType = classNode.getNodeValue().trim();
+            Class c = Class.forName(pictureType);
+            Object obj = c.newInstance();
+            return obj;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

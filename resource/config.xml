@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
 <config>
     <chartType>round</chartType>
+    <pictureType>com.mode.design.factorymethod.JPGFactory</pictureType>
 </config>

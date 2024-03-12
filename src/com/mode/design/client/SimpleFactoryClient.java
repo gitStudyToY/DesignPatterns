@@ -4,7 +4,7 @@ import com.mode.design.simplefactory.Shape;
 import com.mode.design.simplefactory.ShapeFactory;
 import com.mode.design.util.XMLUtil;
 
-public class Client {
+public class SimpleFactoryClient {
 
     public static void main(String[] args) {
         Shape shape;
