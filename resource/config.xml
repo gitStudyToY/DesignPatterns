@@ -4,4 +4,5 @@
     <pictureType>com.mode.design.factorymethod.JPGFactory</pictureType>
     <systemType>com.mode.design.abstractfactory.Android</systemType>
     <builderType>com.mode.design.builder.FullMode</builderType>
+    <adapterType>com.mode.design.adapter.OperationAdapter</adapterType>
 </config>
