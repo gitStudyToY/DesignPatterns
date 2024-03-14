@@ -7,7 +7,6 @@ import java.util.Hashtable;
  */
 public class PrototypeManager {
 
-
     /**
      *  用于存储原型对象
      */
