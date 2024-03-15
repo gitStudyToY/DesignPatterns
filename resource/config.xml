@@ -5,4 +5,6 @@
     <systemType>com.mode.design.abstractfactory.Android</systemType>
     <builderType>com.mode.design.builder.FullMode</builderType>
     <adapterType>com.mode.design.adapter.OperationAdapter</adapterType>
+    <bridgeType>com.mode.design.bridge.TxtFile</bridgeType>
+    <bridgeType>com.mode.design.bridge.MysqlDataBase</bridgeType>
 </config>

@@ -106,4 +106,30 @@ public class XMLUtil {
             return null;
         }
     }
+
+    public static Object getBriage(String type) {
+        try {
+            //创建文档对象
+            DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = dFactory.newDocumentBuilder();
+            Document doc;
+            doc = builder.parse(new File("resource/config.xml"));
+            NodeList nl = doc.getElementsByTagName("bridgeType");
+            Node classNode = null;
+            //获取包含图表类型的文本节点
+            if("file".equals(type) ) {
+                classNode = nl.item(0).getFirstChild();
+            }else{
+                classNode = nl.item(1).getFirstChild();
+            }
+
+            String systemType = classNode.getNodeValue().trim();
+            Class c = Class.forName(systemType);
+            Object obj = c.newInstance();
+            return obj;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
