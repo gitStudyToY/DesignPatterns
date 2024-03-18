@@ -7,6 +7,9 @@ import com.mode.design.builder.Director;
 import com.mode.design.builder.Element;
 import com.mode.design.util.XMLUtil;
 
+import java.util.Calendar;
+import java.util.Date;
+
 public class BridgeClient {
 
     public static void main(String[] args) {
