@@ -9,7 +9,5 @@ public class Android implements SystemFactory {
     @Override
     public InterfaceController createInterfaceController() {
         return new AndroidInterface();
-
-
     }
 }
