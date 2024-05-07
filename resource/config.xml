@@ -7,4 +7,6 @@
     <adapterType>com.mode.design.adapter.OperationAdapter</adapterType>
     <bridgeType>com.mode.design.bridge.TxtFile</bridgeType>
     <bridgeType>com.mode.design.bridge.MysqlDataBase</bridgeType>
+    <commandType>com.mode.design.command.HelpCommand</commandType>
+    <commandType>com.mode.design.command.MinimizeCommand</commandType>
 </config>
